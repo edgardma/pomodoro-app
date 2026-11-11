@@ -21,22 +21,27 @@ Aplicación Android nativa para organizar sesiones de enfoque y pausas con la t�
 - Tema oscuro inicial y tema claro opcional.
 - Interfaz en español inicial e inglés opcional.
 - Preferencias guardadas localmente y opción para restaurar los valores iniciales.
-- Icono vectorial propio con un tomate y un reloj pequeño.
+- Icono adaptable vectorial basado en el gráfico de reloj rojo adjunto.
 - Pantalla principal que respeta las áreas seguras del sistema, con progreso semicircular, tiempo destacado y controles de sesión.
 
 ## Estructura
 
 ```text
 app/
-├── build.gradle.kts                 # Configuración Android, dependencias y variantes
-├── proguard-rules.pro               # Reglas adicionales de R8
+├── build.gradle.kts                  # Configuración Android, dependencias y variantes
+├── proguard-rules.pro                # Reglas adicionales de R8
 └── src/main/
-    ├── AndroidManifest.xml          # Aplicación, actividad y permiso de vibración
-    ├── java/com/example/pomodoro/
+    ├── AndroidManifest.xml           # Aplicación, actividad y permiso de vibración
+    ├── java/
     │   └── pe/com/dyd/app/pomodoro/
-    │       └── MainActivity.kt       # Interfaz, temporizador y configuración
-    └── res/drawable/
-        └── ic_pomodoro.xml           # Icono vectorial de la aplicación
+    │       └── MainActivity.kt        # Interfaz, temporizador y configuración
+    └── res/
+        ├── drawable/
+        │   └── ic_launcher_foreground.xml # Gráfico vectorial del reloj
+        ├── mipmap-anydpi-v26/
+        │   └── ic_launcher.xml        # Icono adaptable de Android
+        └── values/
+            └── ic_launcher_background.xml # Fondo del icono adaptable
 ```
 
 ## Abrir y ejecutar
@@ -77,3 +82,5 @@ Los valores se guardan en las preferencias locales de la aplicación. El proyect
 
 - [AGENTS.md](AGENTS.md): prompt consolidado y pautas para continuar el desarrollo.
 - [CHANGELOG.md](CHANGELOG.md): historial de cambios por versión.
+
+

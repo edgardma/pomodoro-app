@@ -1,0 +1,19 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Keep the clock inside the adaptive icon safe zone (66 x 66 dp). -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:strokeColor="#FFF0192D"
+        android:strokeWidth="7"
+        android:pathData="M54,25 C70,25 83,38 83,54 C83,70 70,83 54,83 C38,83 25,70 25,54 C25,38 38,25 54,25 Z" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFF0192D"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M54,32 L54,54 L39,66" />
+</vector>

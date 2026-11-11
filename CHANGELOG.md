@@ -28,3 +28,14 @@ Los cambios notables del proyecto se registran aquí.
 - Se añadió `.gitignore` para archivos de compilación, configuración local, IDE y claves.
 - Se añadió este historial de cambios.
 - Se consolidó el prompt del proyecto y las pautas de desarrollo en `AGENTS.md`.
+
+### Actualizado
+
+- Se reemplazó el icono de tomate por el gráfico de reloj rojo adjunto, convertido en icono adaptable vectorial para Android.
+
+## [1.0.1] - 2026-11-11
+
+### Corregido
+
+- Se redujo el reloj del icono adaptable para que su contorno rojo quede dentro de la zona segura y no sea recortado por la máscara del lanzador.
+- Se incrementó el número de versión para identificar esta actualización en el emulador.
