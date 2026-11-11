@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="128"
+    android:viewportHeight="108">
+    <!-- Pomodoro tomato -->
+    <path android:fillColor="#E71924" android:pathData="M14,58 C14,40 25,28 39,26 C44,20 51,19 56,25 C72,23 87,35 91,51 C96,71 83,88 63,91 C41,95 17,82 14,64 Z" />
+    <path android:fillColor="#C90F1B" android:pathData="M17,66 C29,83 50,88 67,84 C81,81 90,69 91,56 C96,74 82,89 64,92 C42,96 20,83 17,66 Z" />
+    <path android:fillColor="#FF6568" android:pathData="M25,42 C29,34 34,31 39,30 C34,36 29,48 28,58 C27,63 26,69 28,74 C22,69 20,54 25,42 Z" />
+    <!-- Green calyx and stem -->
+    <path android:fillColor="#19733A" android:pathData="M48,28 C50,20 52,14 54,10 C56,9 60,10 62,12 C60,19 58,24 55,29 Z" />
+    <path android:fillColor="#258D49" android:pathData="M54,29 C45,25 37,23 30,20 C34,28 42,32 51,33 C43,33 36,36 31,40 C40,39 47,36 54,32 C61,36 68,38 75,37 C69,33 63,31 57,30 C65,27 71,24 76,20 C67,22 61,25 54,29 Z" />
+    <!-- Small clock beside the tomato -->
+    <path android:fillColor="#FFFFFF" android:pathData="M82,69 C82,58.5 90.5,50 101,50 C111.5,50 120,58.5 120,69 C120,79.5 111.5,88 101,88 C90.5,88 82,79.5 82,69 Z" />
+    <path android:fillColor="#18201A" android:pathData="M101,52 C91.6,52 84,59.6 84,69 C84,78.4 91.6,86 101,86 C110.4,86 118,78.4 118,69 C118,59.6 110.4,52 101,52 Z M101,55 C108.7,55 115,61.3 115,69 C115,76.7 108.7,83 101,83 C93.3,83 87,76.7 87,69 C87,61.3 93.3,55 101,55 Z" />
+    <path android:fillColor="#18201A" android:pathData="M99.5,58 L102.5,58 L102.5,68 L99.5,68 Z M100,67 L109,67 L109,70 L100,70 Z" />
+    <path android:fillColor="#18201A" android:pathData="M99.5,54 L102.5,54 L102.5,57 L99.5,57 Z M99.5,81 L102.5,81 L102.5,84 L99.5,84 Z M86,67.5 L89,67.5 L89,70.5 L86,70.5 Z M113,67.5 L116,67.5 L116,70.5 L113,70.5 Z" />
+</vector>

@@ -1,35 +1,116 @@
-# Gradle files
+# ============================================================
+# Android Studio / Gradle / Kotlin / Java
+# Proyecto Android (aplicacion o biblioteca, multimodulo)
+# ============================================================
+
+# 1. Gradle: caches y salidas de compilacion (todos los modulos)
 .gradle/
-build/
+**/build/
 .kotlin/
 
-# Local configuration file (sdk path, etc)
+# 2. Configuracion local de la maquina
 local.properties
 
-# Log/OS Files
-*.log
-
-# Android Studio generated files and folders
+# 3. Android Studio / IntelliJ IDEA: configuracion local
+.idea/
+*.iml
+*.ipr
+*.iws
 captures/
+.navigation/
+
+# 4. Android NDK / CMake: compilacion nativa generada
 .externalNativeBuild/
 .cxx/
-*.aab
+
+# 5. Artefactos generados para distribucion
 *.apk
+*.aab
+*.ap_
 output-metadata.json
 
-# IntelliJ
-*.iml
-.idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
+# 6. Registros, perfiles y archivos temporales
+*.log
+*.hprof
+*.heapdump
+*.trace
+*.tmp
+*.swp
+*.swo
+*~
 
-# Keystore files
+# 7. Firmas y credenciales locales (no subir a Git)
 *.jks
 *.keystore
+*.p12
+*.pfx
+*.key
+keystore.properties
+key.properties
+secrets.properties
+.env
+.env.*
+!.env.example
+!.env.sample
 
-# Google Services (e.g. APIs or Firebase)
+# 8. Firebase: configuracion local opcional
+# El archivo google-services.json normalmente no contiene claves secretas
+# de servidor; quita esta regla si el equipo decide versionarlo.
 google-services.json
 
-# Android Profiling
-*.hprof
+# Credenciales privadas de cuentas de servicio Firebase / Google Cloud
+*firebase-adminsdk*.json
+*service-account*.json
+serviceAccountKey.json
+
+# 9. Archivos generados por el sistema operativo
+# macOS (Finder, Spotlight y metadatos en unidades externas)
+.DS_Store
+.AppleDouble/
+.LSOverride
+._*
+.Spotlight-V100/
+.Trashes/
+.fseventsd/
+.TemporaryItems/
+.DocumentRevisions-V100/
+.VolumeIcon.icns
+.apdisk
+
+# Windows (Explorador de archivos)
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux (gestores de archivos de escritorio)
+.directory
+.Trash-*/
+
+# IMPORTANTE: SI se deben versionar (cuando correspondan):
+# gradlew, gradlew.bat, gradle/wrapper/gradle-wrapper.jar,
+# gradle/wrapper/gradle-wrapper.properties,
+# gradle/libs.versions.toml, settings.gradle[.kts],
+# build.gradle[.kts], gradle.properties (sin secretos),
+# proguard-rules.pro, lint-baseline.xml y codigo fuente.
+
+# 10. Asistentes de IA: solo estado local, historiales y caches
+# Claude Code (ajustes privados de la maquina; conservar .claude/settings.json)
+**/.claude/settings.local.json
+
+# Aider (historial de conversaciones, entradas y caches)
+.aider.chat.history.md
+.aider.input.history
+.aider.llm.history
+.aider.tags.cache.*
+
+# OpenCode: dependencias instaladas localmente, si existen
+**/.opencode/node_modules/
+
+# SI versionar instrucciones compartidas para agentes:
+# AGENTS.md, CLAUDE.md, .github/copilot-instructions.md,
+# .cursor/rules/, .claude/settings.json, opencode.json,
+# .opencode/skills/ y codigo, pruebas y documentacion revisados.
+# Evitar ignorar .claude/, .cursor/, .opencode/ o *.md completos.
